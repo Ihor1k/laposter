@@ -912,7 +912,16 @@ body.menu-open {
 }
 @media screen and (max-width: 480px) {
   .about {
-    margin-top: 200px;
+    padding-top: 80px;
+  }
+}
+
+.about-mobile {
+  padding-top: 300px;
+}
+@media screen and (max-width: 480px) {
+  .about-mobile {
+    padding-top: 160px;
   }
 }
 
@@ -979,7 +988,7 @@ body.menu-open {
 }
 
 .service-platform {
-  margin-top: 0px;
+  margin-top: -1px;
 }
 
 .service-platform .video {
@@ -1089,6 +1098,12 @@ body.menu-open {
   margin-top: 150px;
   padding: 140px 0;
   background: #000;
+}
+@media screen and (max-width: 480px) {
+  .why {
+    margin-top: 80px;
+    padding: 80px 0;
+  }
 }
 
 .why-header {
@@ -1344,12 +1359,17 @@ body.menu-open {
 }
 @media screen and (max-width: 480px) {
   .contact {
-    margin-top: 0px;
+    margin-top: -1px;
   }
 }
 
 .contact-platform {
   margin-top: 150px;
+}
+@media screen and (max-width: 480px) {
+  .contact-platform {
+    margin-top: 80px;
+  }
 }
 
 .contact-wrapper {
