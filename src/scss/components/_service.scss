@@ -4,12 +4,22 @@
     padding: 140px 0;
     background: #000;
     overflow: hidden;
+    @media screen and (max-width: 480px) {
+        margin-top: 80px;   
+        padding: 0 0 80px 0;
+    }
 }
 
 .service .video {
     left: 900px;
     top: 140px;
     max-width: 1700px;
+    @media screen and (max-width: 480px) {
+        position: relative;  
+        left: 0;
+        top: 0;
+        height: 60vh; 
+    }
 }
 
 .service-title {
@@ -25,6 +35,11 @@ line-height: 110%; /* 68.2px */
 text-transform: uppercase;
 margin-bottom: 60px;
 z-index: 3;
+
+@media screen and (max-width: 480px) {
+    font-size: 40px;     
+    margin-top: 40px;  
+}
 }
 
 .service-list {
@@ -34,6 +49,9 @@ z-index: 3;
     gap: 24px;
     width: 48%;
     z-index: 3;
+    @media screen and (max-width: 480px) {
+        width: 100%;   
+    }
 }
 
 .service-item {

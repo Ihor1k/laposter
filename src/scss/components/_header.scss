@@ -388,15 +388,15 @@ body.menu-open {
       flex-direction: column;
       align-items: center;
       justify-content: unset;
-      gap: 50px;
+      gap: 60px;
       position: fixed;
-      top: 75px;
+      top: 50px;
       left: 0;
       width: 100%;
       height: 510px;
-      border-radius: 26px;
-      border-top: 1px solid var(--neutral-devider, #313131);
-      background: var(--neutral-black, #fff);
+      // border-radius: 26px;
+      border-top: 1px solid var(--neutral-devider, #212121);
+      background: var(--neutral-black, #000);
 
       /* Card */
       backdrop-filter: blur(12.5px);
@@ -412,7 +412,7 @@ body.menu-open {
     .header-link {
       // margin: 0 0 32px 0;
       text-decoration: none;
-      color: #171717;
+      color: #C9C9C9;
     }
   
     .header-buttons {

@@ -75,6 +75,9 @@ font-weight: 500;
 line-height: 110%; /* 68.2px */
 text-transform: uppercase;
 margin-bottom: 16px;
+@media screen and (max-width: 480px) {
+  font-size: 40px;       
+}
   }
 
   .popup-context p {
@@ -257,7 +260,7 @@ line-height: 20px; /* 125% */
     @media screen and (max-width: 480px) {
         margin-top: 12px;  
         width: 100%; 
-        justify-content: space-between;
+        justify-content: center;
     }
   //   border-radius: 100px;
   //   background: #000;

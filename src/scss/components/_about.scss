@@ -1,5 +1,8 @@
 .about {
     margin-top: 300px;
+    @media screen and (max-width: 480px) {
+        margin-top: 200px;   
+    }
 }
 
 .about-title {
@@ -14,11 +17,18 @@ line-height: 110%;
 border-bottom: 1px solid rgba(0, 0, 0, 0.30);
 padding-bottom: 24px;
 margin-bottom: 60px;
+@media screen and (max-width: 480px) {
+    margin-bottom: 40px;       
+}
 }
 
 .about-content {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        gap: 20px;   
+    }
 }
 
 .about-text {
@@ -34,4 +44,7 @@ letter-spacing: -0.224px;
 text-transform: uppercase;
 max-width: 598px;
 width: 100%;
+@media screen and (max-width: 480px) {
+    font-size: 20px;       
+}
 }
