@@ -6,6 +6,15 @@
     }
 }
 
+.platform { 
+    background: #000;
+    height: 810px;
+}
+
+.platform .container {
+    z-index: 3;
+}
+
 .hero-bg {
     position: absolute;
     top: 0;
@@ -17,6 +26,31 @@
         display: none;
     }
 }
+
+.platform-bg {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 0;
+    // width: 76%;
+    max-height: 810px;
+}
+
+.platform::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    width: 30%;
+    /* типове "як на херо": сильне зліва + легке загальне */
+    background:
+      linear-gradient(90deg, rgba(0,0,0,.65) 0%, rgba(0,0,0,.35) 45%, rgba(0,0,0,0) 70%),
+      linear-gradient(0deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.15) 100%);
+    @media screen and (max-width: 480px) {
+          width: 100%;
+    }
+  }
 
 .hero-bg-mobile {
     display: none;

@@ -3,21 +3,27 @@
 }
 
 .policy-title {
-    color: var(--000000, #000);
-font-family: Urbanist;
-font-size: 44px;
+    color: var(--blak-white-blak, #000);
+text-align: center;
+
+/* H2 */
+font-family: Outfit;
+font-size: 62px;
 font-style: normal;
-font-weight: 600;
-line-height: 110%;
+font-weight: 500;
+line-height: 110%; /* 68.2px */
+text-transform: uppercase;
 }
 
 .policy-text {
-    color: var(--neutral-900, #171717);
-font-family: Inter;
+    color: var(--blak-white-blak, #000);
+
+/* body medium */
+font-family: Outfit;
 font-size: 20px;
 font-style: normal;
-font-weight: 400;
-line-height: 130%; /* 26px */
+font-weight: 500;
+line-height: 110%;
 max-width: 868px;
 width: 100%;
 margin-top: 24px;
@@ -34,20 +40,25 @@ margin-top: 24px;
 }
 
 .policy-item-title {
-    color: var(--neutral-900, #171717);
-font-family: Inter;
-font-size: 24px;
+    color: var(--blak-white-blak, #000);
+
+/* H4 */
+font-family: Outfit;
+font-size: 28px;
 font-style: normal;
 font-weight: 500;
-line-height: 110%; /* 26.4px */
+line-height: 110%; /* 30.8px */
+text-transform: uppercase;
 margin-bottom: 24px;
 }
 
 .policy-item-text {
-    color: var(--neutral-800, #444);
-font-family: Inter;
+    color: var(--neutral-700, #444);
+
+/* body regular */
+font-family: Outfit;
 font-size: 20px;
 font-style: normal;
-font-weight: 500;
-line-height: 130%; /* 26px */
+font-weight: 400;
+line-height: 110%; /* 22px */
 }

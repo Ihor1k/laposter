@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laposter Platform</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="/"
+              ><img
+                src="./images/header-logo.png"
+                width="176"
+                height="32"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="header-logo-mobile">
+            <a href="/"
+              ><img
+                src="./images/header-logo.png"
+                width="113"
+                height="20"
+                alt="Logo"
+            /></a>
+          </div>
+
+          <div class="burger">
+            <img src="./images/burger.svg" alt="" />
+          </div>
+
+          <div class="header-menu">
+            <div class="burger-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <a href="/index.html#hero" class="header-link">Home</a>
+            <a href="#services" class="header-link">Services</a>
+            <a href="#expertise" class="header-link">Expertise</a>
+            <a href="#why" class="header-link">Why Laposter</a>
+            <a href="./platform.html" class="header-link header-link-active"><span class="yellow">✦</span> Platform</a>
+          </div>
+
+          <div class="header-buttons mobile-visible">
+            <button class="header-button">Get Contact</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup">
+        <div class="popup-block">
+          <div class="popup-inner">
+            <div class="popup-context">
+              <h3>Contact Laposter</h3>
+              <p class="pop-text">
+                If you’re looking for IT services, software support, or help with your technical setup, feel free to reach out. Tell us a bit about your needs, and we’ll get back to you shortly.
+              </p>
+            </div>
+  
+            <form class="popup-form" id="joinForm">
+              <div class="form-field">
+                <label for="name">Full name*</label>
+                <input type="text" id="name" name="name" placeholder="Add your full name" required />
+              </div>
+              <div class="form-field">
+                <label for="name">Email adress*</label>
+                 <input type="email" id="email" name="email" placeholder="Add your Email adress" required/>
+              </div>
+              <!-- <div class="form-field">
+                 <input type="text" id="jurisdiction" name="jurisdiction" placeholder="Jurisdiction"/>
+              </div> -->
+              <div class="form-field">
+                <label for="name">Company/Organization (optionaly)</label>
+                <input type="text" id="company" name="company" placeholder="Add company name"/>
+              </div>
+              <!-- <div class="form-field">
+                <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" required />
+              </div> -->
+              
+              <div class="form-field">
+                <label for="name">Message*</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="3" required></textarea>
+              </div>
+              <div class="popup-wrapper">
+                <button type="submit" class="popup-btn">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+ 
+        <span class="close-popup"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M1 1L13 13" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+      </div>
+    </div>
+
+    <section id="hero" class="hero platform">
+      <img src="./images/platform-bg.png" alt="" class="platform-bg">
+      <img src="./images/platform-mobile-bg.png" alt="" class="hero-bg-mobile">
+      <div class="container">
+        <h1 class="hero-title">The <span class="yellow">Laposter</span>  <br>
+            Platform</h1>
+        <div class="hero-texts">
+          <p class="hero-text">A software platform for building and operating UI and interface layers for digital products that develop over time</p>
+        </div>
+        <button class="hero-button">Contact Us</button>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="about-title"><span class="yellow">✦</span> Built for Evolving Digital Interfaces</h2>
+        <div class="about-content">
+          <p class="about-text">The Laposter Platform is designed for digital products where the user interface and presentation layer change continuously. It provides a structured foundation for managing UI, layout</p>
+          <p class="about-text">The platform helps teams move away from fragmented interface implementations and toward a unified system that supports consistency, adaptability, and long-term operation</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="why">
+        <div class="container">
+          <div class="why-header">
+            <div class="why-content">
+              <h3 class="why-title"><span class="yellow">Industries</span> and Use Cases</h3>
+              <p class="why-text">We concentrate on systems that businesses depend on daily, with an emphasis on reliability and continuity.</p>
+            </div>
+            <img src="./images/why-logo.svg" alt="" class="why-logo">
+          </div>
+  
+          <div class="why-list">
+            <div class="why-item why-platform">
+              <div class="why-icon fifth"></div>
+              <h4 class="why-item-title">iGaming</h4>
+              <p class="why-item-text">Digital platforms operating across multiple brands and jurisdictions, where interface consistency, localization, and controlled updates are essential for stable operation and user experience</p>
+            </div>
+            <div class="why-item why-platform">
+              <div class="why-icon sixth"></div>
+              <h4 class="why-item-title">E-commerce</h4>
+              <p class="why-item-text">Online businesses managing multiple storefronts, regions, and customer journeys, where UI structure and content need to adapt without disrupting operations</p>
+            </div>
+            <div class="why-item why-platform">
+              <div class="why-icon seventh"></div>
+              <h4 class="why-item-title">Digital Entertainment</h4>
+              <p class="why-item-text">Content-driven products requiring frequent interface updates, localization, and dynamic presentation while maintaining a consistent user 
+                experience </p>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+    <section id="services" class="service service-platform">
+      <div class="video" style="z-index: 1;">
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="./videos/platform-why-video-less.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <h2 class="service-title">What the <span class="yellow">Platform Supports</span></h2>
+        <div class="service-inner">
+
+          <div class="service-list">
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>  Multi-Brand UI Management</h4>
+              <p class="service-item-text">Support for multiple interface variants within a single platform, allowing shared structure with brand-level customization</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>   Configuration-Driven UI and Layouts</h4>
+              <p class="service-item-text">UI behavior, layouts, and presentation can be adjusted through configuration without rebuilding the interface layer</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>   Content and Localization Control</h4>
+              <p class="service-item-text">Centralized management of user-facing content and language variations across 
+                markets</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>   Operational Stability</h4>
+              <p class="service-item-text">Designed to support live digital products operating under high load and continuous interface changes</p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="expertise" class="about" style="padding-top: 150px;">
+      <div class="container">
+        <h3 class="about-title"><span class="yellow">✦</span> Use cases</h3>
+        <div class="about-content">
+          <p class="about-text">Laposter Platform serves teams 
+            as the interface layer of their digital products. It provides a shared environment where UI structure and presentation are defined once and reused across products and markets</p>
+          <p class="about-text">The platform supports collaboration between product, engineering, and operational teams by reducing duplication, simplifying updates, and making ongoing interface changes easier to manage as products evolve</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact contact-platform">
+      <div class="video">
+        <video autoplay muted loop playsinline preload="auto" style="max-height: 810px;">
+          <source src="./videos/contact-platform-video-less.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-glass">
+            <h4 class="contact-title"><span class="yellow">Discuss</span> Your Case</h4>
+            <p class="contact-text">If you’re operating a digital product in iGaming, e-commerce, entertainment, or a similar environment, get in touch to discuss whether the platform fits your setup</p>
+            <button class="contact-button">Contact Us</button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-list">
+            <div class="footer-item">
+              <img src="./images/footer-logo.png" width="379" height="69" alt="" class="footer-logo">
+              <p class="footer-addres" style="margin-bottom: 10px; margin-top: 27px;">Address: </p>
+              <p class="footer-addres">Eratosthenous, 8, Kato Polemidia, 4154, Limassol, Cyprus</p>
+              <div class="copyright">© 2026 LAPOSTER LTD</div>
+            </div>
+
+            <div class="footer-item">
+              <div class="footer-menu">
+                <a href="/index.html#hero" class="footer-link">Home</a>
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#expertise" class="footer-link">Expertise</a>
+                <a href="#why" class="footer-link">Why Laposter</a>
+                <a href="./platform.html" class="footer-link footer-link-active"><span class="yellow">✦</span> Platform</a>
+              </div>
+              <p class="footer-text">E-Mail</p>
+              <a href="mailto:info@laposter.org" class="footer-email">info@laposter.org</a>
+              <p class="copyright-mobile">© 2026 LAPOSTER LTD</p>
+              <a href="./politic.html" class="privacy">Privacy Policy. All rights reserved</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
+</html>

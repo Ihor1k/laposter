@@ -68,6 +68,14 @@ max-width: 640px;
     }
 }
 
+.why-platform {
+    width: 32%;
+    @media screen and (max-width: 480px) {
+          width: 100%;
+    }
+}
+
+
 .why-item-title {
     color: var(--primary-yellow, #FFE20E);
 
@@ -126,6 +134,27 @@ line-height: 110%; /* 22px */
     -webkit-mask: url("/src/images/why-icon4.svg") no-repeat center;
     -webkit-mask-size: contain;
     mask: url("/src/images/why-icon4.svg") no-repeat center;
+    mask-size: contain;
+}
+
+.fifth {
+    -webkit-mask: url("/src/images/why-icon5.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("/src/images/why-icon5.svg") no-repeat center;
+    mask-size: contain;
+}
+
+.sixth {
+    -webkit-mask: url("/src/images/why-icon6.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("/src/images/why-icon6.svg") no-repeat center;
+    mask-size: contain;
+}
+
+.seventh {
+    -webkit-mask: url("/src/images/why-icon7.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("/src/images/why-icon7.svg") no-repeat center;
     mask-size: contain;
 }
   
