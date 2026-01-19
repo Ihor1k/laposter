@@ -1,0 +1,139 @@
+.why {
+    margin-top: 150px;
+    padding: 140px 0;
+    background: #000;
+}
+
+.why-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.why-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.why-title {
+    color: var(--blak-white-white, #FFF);
+
+/* H2 */
+font-family: Outfit;
+font-size: 62px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%; /* 68.2px */
+text-transform: uppercase;
+}
+
+.why-text {
+    color: var(--blak-white-white, #FFF);
+
+/* body medium */
+font-family: Outfit;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%; /* 22px */
+max-width: 640px;
+}
+
+.why-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.why-item {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: var(--neutral-900, #212121);
+}
+
+.why-item-title {
+    color: var(--primary-yellow, #FFE20E);
+
+/* H4 */
+font-family: Outfit;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%; /* 30.8px */
+text-transform: uppercase;
+margin: 80px 0 24px 0;
+}
+
+.why-item-text {
+    color: rgba(255, 255, 255, 0.60);
+
+/* body regular */
+font-family: Outfit;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 22px */
+}
+
+.why-icon{
+    position: relative;
+    width: 81px;
+    height: 70px;
+  
+    /* базовий (сірий) стан */
+    background: #bfbfbf;
+}
+
+.first {
+    -webkit-mask: url("/src/images/why-icon1.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("/src/images/why-icon1.svg") no-repeat center;
+    mask-size: contain;
+}
+
+.second {
+    -webkit-mask: url("/src/images/why-icon2.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("/src/images/why-icon2.svg") no-repeat center;
+    mask-size: contain;
+}
+
+.third {
+    -webkit-mask: url("/src/images/why-icon3.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("/src/images/why-icon3.svg") no-repeat center;
+    mask-size: contain;
+}
+
+.fourth {
+    -webkit-mask: url("/src/images/why-icon4.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("/src/images/why-icon4.svg") no-repeat center;
+    mask-size: contain;
+}
+  
+.why-icon::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+        linear-gradient(98deg, #FFE20E 6.1%, #FFE20E 103.66%);
+
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+
+    /* щоб градієнт теж обрізався формою іконки */
+    -webkit-mask: inherit;
+    mask: inherit;
+}
+
+/* hover на блоці */
+.why-item:hover .why-icon::after{
+    opacity: 1;
+}
+  

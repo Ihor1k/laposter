@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carfolisia</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="/"
+              ><img
+                src="./images/header-logo.png"
+                width="147"
+                height="38"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="header-logo-mobile">
+            <a href="/"
+              ><img
+                src="./images/header-logo.png"
+                width="93"
+                height="24"
+                alt="Logo"
+            /></a>
+          </div>
+
+          <div class="burger">
+            <img src="./images/burger.svg" alt="" />
+          </div>
+
+          <div class="header-menu">
+            <div class="burger-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                  fill="#000"
+                />
+              </svg>
+            </div>
+            <a href="/index.html#hero" class="header-link">Home</a>
+            <a href="/index.html#services" class="header-link">Services</a>
+            <a href="/index.html#approach" class="header-link">Approach</a>
+            <a href="/index.html#clients" class="header-link">Clients</a>
+            <a href="/index.html#contact" class="header-link">Contact</a>
+          </div>
+
+          <div class="header-buttons mobile-visible">
+            <button class="header-button">Get In Touch
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 7L17 17M17 17V7M17 17H7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup">
+        <div class="popup-block">
+          <div class="popup-inner">
+            <div class="popup-context">
+              <h3>Request a Consultation</h3>
+              <p class="pop-text">
+                Provide your details and a brief overview of your current challenges
+              </p>
+            </div>
+  
+            <form class="popup-form" id="joinForm">
+              <div class="form-field">
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-field">
+                 <input type="text" id="company" name="company" placeholder="Company name" required/>
+              </div>
+              <!-- <div class="form-field">
+                 <input type="text" id="jurisdiction" name="jurisdiction" placeholder="Jurisdiction"/>
+              </div> -->
+              <div class="form-field">
+                <input type="email" id="email" name="email" placeholder="E-mail" required />
+              </div>
+              <!-- <div class="form-field">
+                <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" required />
+              </div> -->
+              
+              <div class="form-field">
+                <textarea id="message" name="message" placeholder="Description of your financial setup and objectives" rows="3" required></textarea>
+              </div>
+              <div class="popup-wrapper">
+                <button type="submit" class="popup-btn">Talk to Us<span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 7L17 17M17 17V7M17 17H7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+ 
+        <span class="close-popup"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M1 1L13 13" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+      </div>
+    </div>
+
+
+    <section class="policy">
+      <div class="container" style="display: flex; flex-direction: column; align-items:center;">
+        <h3 class="policy-title"><span class="dark">Privacy</span> Policy</h3>
+        <p class="policy-text">CARFOLISIA LIMITED (hereinafter referred to as “we”, “our”, “us” or the “Company”), operating from the website https://www.carfolisia.com/, is a Hong Kong company, with registration number 79304681, and registered address at Office 4, 10/F., Kwan Chart Tower, No. 6 Tonnochy Road, Wan Chai, Hong Kong. The Company is committed to providing technology-driven IT-based marketing and digital infrastructure services</p>
+
+        <div class="policy-inner">
+          
+          <div class="policy-item">
+            <p class="policy-item-title">1. Introduction</p>
+            <p class="policy-item-text">This Policy provides an overview of how our Company protects the personal data and privacy of individuals who register to use our services (hereinafter referred to as the “Services”).
+<br><br>
+              The Company is committed to protecting your privacy and handling your data in an open and transparent manner and in accordance with the relevant data protection legislation applicable in Hong Kong. The personal data that we collect and process depends on the product or service requested and agreed upon in each individual case.
+              <br><br> 
+              Effective as of January 04, 2026, CARFOLISIA LIMITED has updated this Privacy Policy (hereinafter referred to as the “Policy”).</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">2. What we need</p>
+            <p class="policy-item-text">Our Personal Data Protection Policy governs the use and storage of your data.
+              CARFOLISIA LIMITED acts as a Controller of the personal data you provide to us. We only collect basic personal data about you.
+              <br><br>
+              Subscriber’s personal data (meaning any information about You from which You can be personally identified, such as Your name, telephone number, or email address, and which is referred to in this Privacy Policy as “Your Information”) will be processed by CARFOLISIA LIMITED (which includes its agents and employees), and, where appropriate, our partners and subcontractors, in order to provide the full range of Services to the Subscriber.
+              <br><br>
+              The Subscriber’s information is collected when the Subscriber submits a contact or enquiry form or communicates with us through the website https://www.carfolisia.com/</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">3. Why we need It</p>
+            <p class="policy-item-text">We require personal data for the following purposes:
+<br><br>
+              Contacting individuals – collection of identification and contact details such as name, email address, and telephone number for communication purposes.
+              <br><br>
+              Communicating with individuals – use of email addresses to respond to enquiries and maintain communication.
+              <br><br>
+              Legal basis: <br><br>
+              Processing of personal data is based on the data subject’s consent and, where applicable, the performance or conclusion of a contract.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">4. Who receives your personal data</p>
+            <p class="policy-item-text">Personal data may be transferred to third countries outside Hong Kong where necessary for operational purposes, in accordance with applicable data protection requirements.
+<br><br>
+              Where such transfers occur, appropriate safeguards are applied to ensure that personal data remains protected in line with relevant data protection standards.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">5. Transfer of personal data to third countries</p>
+            <p class="policy-item-text">Personal data may be transferred to third countries outside Hong Kong where necessary for operational purposes, in accordance with applicable data protection requirements.
+<br><br>
+              Where such transfers occur, appropriate safeguards are applied to ensure that personal data remains protected in line with relevant data protection standards.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">6. How Long We Keep Your Personal Data</p>
+            <p class="policy-item-text">Personal data is stored in a form that allows identification of data subjects only for as long as necessary to fulfil the purposes for which the data was collected.
+<br><br>
+              Personal data may be retained for longer periods where required for legal, regulatory, archiving, statistical, or defence of legal rights purposes.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">7. Your data protection rights</p>
+            <p class="policy-item-text">You have the following rights in relation to your personal data held by us:
+              <br><br>
+
+              • The right to access your personal data <br>
+              • The right to request correction of inaccurate or incomplete data  <br>
+              • The right to request erasure of your personal data where there is no lawful reason for continued processing <br>
+              • The right to object to the processing of personal data in certain circumstances <br>
+              • The right to withdraw consent to processing at any time, where processing is based on consent <br>
+              <br>
+              To exercise any of these rights or to raise concerns, you may contact us using the details below.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">8. Right to lodge a complaint</p>
+            <p class="policy-item-text">If you believe that your personal data has not been handled appropriately, you may contact us at:
+<br><br>
+              Email: info@carfolisia.com
+              <br><br>
+              If you remain dissatisfied, you have the right to lodge a complaint with the relevant authority in Hong Kong:
+              <br><br>
+              Privacy Commissioner for Personal Data <br>Room 1303, 13/F, Dah Sing Financial Centre <br>248 Queen's Road East, Wan Chai, Hong Kong <br><br>
+              Email: complaints@pcpd.org.hk</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">9. Changes to this privacy policy</p>
+            <p class="policy-item-text">Carfolisia Limited may amend this Privacy Policy from time to time. Any updates will be reflected by revising the effective date at the top of this page.
+<br><br>
+              We encourage users to review this Policy periodically to remain informed about how personal data is processed and protected.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-line" style="padding-bottom: 40px; border-bottom: 1px solid rgba(255, 255, 255, 0.20);">
+            <div class="footer-col">
+              <img src="./images/footer-logo.png" width="423" height="109" alt="" class="footer-logo">
+            </div>
+            <div class="footer-col">
+              <p class="footer-contact">Contact Us:</p>
+              <p class="footer-email">info@carfolisia.com</p>
+            </div>
+            <div class="footer-col">
+              <p class="footer-contact">Contact Us:</p>
+              <p class="footer-address">Office 4, 10/F, Kwan Chart TowerNo. 6 Tonnochy Road, Wan Chai, Hong Kong</p>
+            </div>
+          </div>
+          <div class="footer-line">
+            <p class="copyright">© 2026 CARFOLISIA LIMITED </p>
+            <a href="./politic.html" class="privacy">Privacy Policy. All Rights Reserved</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

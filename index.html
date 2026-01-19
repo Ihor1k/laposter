@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laposter</title>
+    <link rel="stylesheet" href="./src/scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="/"
+              ><img
+                src="./src/images/header-logo.png"
+                width="176"
+                height="32"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="header-logo-mobile">
+            <a href="/"
+              ><img
+                src="./src/images/header-logo.png"
+                width="113"
+                height="20"
+                alt="Logo"
+            /></a>
+          </div>
+
+          <div class="burger">
+            <img src="./src/images/burger.svg" alt="" />
+          </div>
+
+          <div class="header-menu">
+            <div class="burger-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <a href="#hero" class="header-link">Home</a>
+            <a href="#services" class="header-link">Services</a>
+            <a href="#expertise" class="header-link">Expertise</a>
+            <a href="#why" class="header-link">Why Laposter</a>
+            <a href="./src/platform.html" class="header-link"><span class="yellow">✦</span> Platform</a>
+          </div>
+
+          <div class="header-buttons mobile-visible">
+            <button class="header-button">Get Contact</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup">
+        <div class="popup-block">
+          <div class="popup-inner">
+            <div class="popup-context">
+              <h3>Contact Laposter</h3>
+              <p class="pop-text">
+                If you’re looking for IT services, software support, or help with your technical setup, feel free to reach out. Tell us a bit about your needs, and we’ll get back to you shortly.
+              </p>
+            </div>
+  
+            <form class="popup-form" id="joinForm">
+              <div class="form-field">
+                <label for="name">Full name*</label>
+                <input type="text" id="name" name="name" placeholder="Add your full name" required />
+              </div>
+              <div class="form-field">
+                <label for="name">Email adress*</label>
+                 <input type="email" id="email" name="email" placeholder="Add your Email adress" required/>
+              </div>
+              <!-- <div class="form-field">
+                 <input type="text" id="jurisdiction" name="jurisdiction" placeholder="Jurisdiction"/>
+              </div> -->
+              <div class="form-field">
+                <label for="name">Company/Organization (optionaly)</label>
+                <input type="text" id="company" name="company" placeholder="Add company name"/>
+              </div>
+              <!-- <div class="form-field">
+                <input type="tel" id="phone" name="phone" placeholder="Phone (optional)" required />
+              </div> -->
+              
+              <div class="form-field">
+                <label for="name">Message*</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="3" required></textarea>
+              </div>
+              <div class="popup-wrapper">
+                <button type="submit" class="popup-btn">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+ 
+        <span class="close-popup"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M1 1L13 13" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+      </div>
+    </div>
+
+    <section id="hero" class="hero">
+      <img src="./src/images/hero-bg.png" alt="" class="hero-bg">
+      <div class="container">
+        <h1 class="hero-title">Software, <span class="dark">Infrastructure, </span> and IT Support</h1>
+        <div class="hero-texts">
+          <p class="hero-text">Laposter provides IT services, software development, and infrastructure support for companies operating complex digital and technical environments</p>
+          <p class="hero-text uppercase">for Modern Business Systems</p>
+        </div>
+        <button class="hero-button">Contact Us</button>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="about-title"><span class="yellow">✦</span> A practical IT partner for ongoing operations</h2>
+        <div class="about-content">
+          <p class="about-text">Laposter works with companies that rely on stable software, infrastructure, and integrated systems to run their operations</p>
+          <p class="about-text">Our focus  is on implementation, support, and long-term maintenance rather than experimental </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="service">
+      <div class="video" style="z-index: 1;">
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="./src/videos/hero-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <h2 class="service-title">Our <span class="yellow">Services</span> </h2>
+        <div class="service-inner">
+
+          <div class="service-list">
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>  Software Integration and Setup</h4>
+              <p class="service-item-text">Installation and configuration of enterprise software solutions, integration of third-party APIs and SaaS platforms, setup of CRM, ERP, and internal workflow systems, database configuration, data migration, and development of custom plugins and extensions</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>  Cloud Services and DevOps</h4>
+              <p class="service-item-text">Cloud infrastructure setup, deployment automation, environment replication, cloud optimization, monitoring, logging, backup strategies, disaster recovery planning, and scalable cloud architecture implementation</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>  IT Infrastructure Support</h4>
+              <p class="service-item-text">Configuration and management of server environments, network setup, VPN and access control, system uptime support, incident response, hardware lifecycle management, and infrastructure monitoring</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>  Software Maintenance and Lifecycle Management</h4>
+              <p class="service-item-text">Ongoing maintenance of active and legacy systems, updates and patching, refactoring, bug tracking, feature extensions, deployment oversight, and SLA-based technical support</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-item-title"><span class="yellow">✦</span>  Cybersecurity and Risk Management</h4>
+              <p class="service-item-text">Security assessments, access management policies, encryption and firewall configuration, compliance support, threat detection, incident response planning, and system-level protection</p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="expertise" class="about" style="margin-top: 150px;">
+      <div class="container">
+        <h3 class="about-title"><span class="yellow">✦</span> Technical Expertise Across Core IT Domains</h3>
+        <div class="about-content">
+          <p class="about-text">Laposter’s expertise spans software systems, infrastructure, cloud environments, and security. We support complex setups where reliability, continuity, and controlled change are critical.</p>
+          <p class="about-text">ur work typically involves integrating multiple systems, maintaining uptime, managing risk, and ensuring that technical foundations remain stable as business needs evolve.  </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="why">
+      <div class="container">
+        <div class="why-header">
+          <div class="why-content">
+            <h3 class="why-title">Why <span class="yellow">Laposter</span> </h3>
+            <p class="why-text">We concentrate on systems that businesses depend on daily, with an emphasis on reliability and continuity.</p>
+          </div>
+          <img src="./src/images/why-logo.svg" alt="" class="why-logo">
+        </div>
+
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon first"></div>
+            <h4 class="why-item-title">Operational <br>
+              Focust</h4>
+            <p class="why-item-text">We concentrate on systems that businesses depend on daily, with an emphasis on reliability and continuity</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon second"></div>
+            <h4 class="why-item-title">Broad Technical Coverage</h4>
+            <p class="why-item-text">From software and infrastructure to cloud and security, we cover multiple technical layers </p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon third"></div>
+            <h4 class="why-item-title">Long-Term Support Mindset</h4>
+            <p class="why-item-text">Our services are structured around ongoing maintenance, improvement, and support </p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon fourth"></div>
+            <h4 class="why-item-title">Clear <br>
+              Execution</h4>
+            <p class="why-item-text">We prioritize structured implementation, clear communication, and controlled technical change</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="video">
+        <video autoplay muted loop playsinline preload="auto" style="max-height: 810px;">
+          <source src="./src/videos/contact-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-glass">
+            <h4 class="contact-title"><span class="yellow">Let’s Talk</span> About Your Setup</h4>
+            <p class="contact-text">If you’re looking for an IT partner to support your software, infrastructure, or operational systems, get in touch and tell us about your context</p>
+            <button class="contact-button">Contact Us</button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-list">
+            <div class="footer-item">
+              <img src="./src/images/footer-logo.png" width="379" height="69" alt="" class="footer-logo">
+              <p class="footer-addres" style="margin-bottom: 10px; margin-top: 27px;">Address: </p>
+              <p class="footer-addres">Eratosthenous, 8, Kato Polemidia, 4154, Limassol, Cyprus</p>
+              <div class="copyright">© 2026 LAPOSTER LTD</div>
+            </div>
+
+            <div class="footer-item">
+              <div class="footer-menu">
+                <a href="#hero" class="footer-link">Home</a>
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#expertise" class="footer-link">Expertise</a>
+                <a href="#why" class="footer-link">Why Laposter</a>
+                <a href="./src/platform.html" class="footer-link"><span class="yellow">✦</span> Platform</a>
+              </div>
+              <p class="footer-text">E-Mail</p>
+              <a href="mailto:info@laposter.org" class="footer-email">info@laposter.org</a>
+              <a href="./src/politic.html" class="privacy">Privacy Policy. All rights reserved</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
+</html>
